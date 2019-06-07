@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: sudoku-net_development
+  database: sudokunet_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sudoku-net_test
+  database: sudokunet_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: sudoku-net_production
-  username: sudoku-net
+  database: sudokunet_production
+  username: sudokunet
   password: <%= ENV['SUDOKU-NET_DATABASE_PASSWORD'] %>
