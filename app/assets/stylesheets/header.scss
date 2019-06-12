@@ -1,0 +1,33 @@
+.header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: $bg-color;
+
+  .title{
+    color: white;
+    line-height: 60px;
+    padding-left: 30px;
+    font-size: 30px;
+    float:left;
+  }
+
+  a,a:hover{
+    display: block;
+    text-decoration: none;
+    color:white;
+    border: 2px solid $main-color;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    line-height: 40px;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    margin: 10px 30px 10px 0px;
+  }
+}

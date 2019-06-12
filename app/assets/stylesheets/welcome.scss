@@ -1,3 +1,35 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome-page{
+  text-align:center;
+  color: white;
+  h1{
+    padding-top: 100px;
+    color: $main-color;
+    font-size: 64px;
+  }
+  h2{
+    color: $main-color;
+    font-size: 36px;
+    margin: 10px auto 50px;
+  }
+
+  a,a:hover{
+    display: block;
+    text-decoration: none;
+    color:white;
+    background: $main-color;
+    width: 300px;
+    height: 64px;
+    border-radius: 7px;
+    margin:30px auto;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    line-height: 64px;
+  }
+
+  .demo-image{
+    margin: 90px auto;
+    width: 80%;
+    border-color: $main-color;
+    box-shadow: 0 8px 20px rgba(0, 255, 149, 0.3);
+  }
+}
