@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title SudokuNet
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %header.header
+      .title
+        Sudoku-net
+      - if user_signed_in? && request.path_info != root_path
+        = link_to "グループ作成", rooms_path, method: :post,class: "btn"
+        = link_to "ログアウト", destroy_user_session_path, method: :delete,class: "btn"
+    = yield
+    %footer.footer

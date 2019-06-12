@@ -1,0 +1,14 @@
+.wrapper
+  .user-mypage
+    %h2
+      参加済み
+      %ul
+        - @rooms.each do |room|
+          %li
+            = room.name
+    %h2
+      未参加
+      %ul
+        - @all_rooms.each do |room|
+          %li
+            = room.name

@@ -1,0 +1,14 @@
+.wrapper
+  .welcome-page
+    .container
+      %h1
+        The simple Sudoku
+      %h2
+        with Network
+      %p
+        複数人でできる数独です。
+      - if user_signed_in?
+        = link_to "Enter","/users/#{current_user.id}",class: "btn"
+      - else
+        = link_to "Enter",new_user_session_path,class: "btn"
+      = image_tag "demo.png",class: "demo-image"
