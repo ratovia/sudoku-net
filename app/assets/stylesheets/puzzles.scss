@@ -1,3 +1,35 @@
-// Place all the styles related to the puzzles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.sudoku-table{
+  margin: 90px auto;
+  padding: 10px;
+  // border: 5px solid #000000;
+  tbody{
+    border: 5px solid $main-color;
+    padding: 1px;
+    display: table-row-group;
+    tr{
+      margin: 10px;
+      td{
+        text-align:center;
+        width: 70px;
+        height: 70px;
+        border:1px solid #7a0707d0;
+
+        input{
+          width: 100%;
+          height: 100%;
+          display:block;
+          text-align:center;
+          border:none;
+        }
+      }
+      .right-border{
+        border-right: 5px solid $main-color;
+      }
+    }
+
+    .bottom-border{
+      border-bottom: 5px solid $main-color;
+    }
+  }
+}
+

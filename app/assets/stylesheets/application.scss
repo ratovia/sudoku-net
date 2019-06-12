@@ -1,0 +1,28 @@
+@import "./reset";
+
+@import "./variable";
+
+@import "./puzzles";
+
+@import "./header";
+
+@import "./welcome";
+
+@import "./users";
+html,body,.wrapper{
+  margin:0;
+  padding:0;
+  width: 100%;
+  background-color: $bg-color;
+}
+.wrapper{
+  background-color: $bg-color;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  text-align:center;
+}
