@@ -1,3 +1,3 @@
 class Puzzle < ApplicationRecord
-  belongs_to :room
+  has_one :rooms
 end
