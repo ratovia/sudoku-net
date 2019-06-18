@@ -21,6 +21,11 @@
           text-align:center;
           border:none;
         }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
       }
       .right-border{
         border-right: 5px solid $main-color;
