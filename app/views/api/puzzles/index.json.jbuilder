@@ -1,1 +1,1 @@
-json.data @puzzle.question
+json.data @puzzle.progress

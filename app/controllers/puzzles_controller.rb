@@ -5,7 +5,7 @@ class PuzzlesController < ApplicationController
 
   def update
     puzzle = Puzzle.find(params[:id])
-    puzzle = puzzle.update(question: puzzles_params[:array])
+    puzzle = puzzle.update(progress: puzzles_params[:array])
     respond_to do |format|
       format.json
     end
