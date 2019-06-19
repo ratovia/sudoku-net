@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_15_063812) do
+ActiveRecord::Schema.define(version: 2019_06_18_094237) do
 
   create_table "puzzles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "answer", null: false
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_06_15_063812) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "room_id"
+    t.string "progress"
   end
 
   create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

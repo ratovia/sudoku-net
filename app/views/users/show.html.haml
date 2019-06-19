@@ -3,12 +3,11 @@
     %h2
       参加済み
       %ul
-        - @rooms.each do |room|
-          %li
-            = room.name
+        = render partial: 'room', collection: @rooms
+            
     %h2
-      未参加
+      全部屋
       %ul
-        - @all_rooms.each do |room|
-          %li
-            = room.name
+        = render partial: 'room', collection: @all_rooms
+        -# = paginate @all_rooms
+       

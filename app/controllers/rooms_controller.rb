@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
 
   
   def create
-    room = current_user.rooms.create(name: "#{current_user.name}の部屋",);
+    room = current_user.rooms.create(name: current_user.name);
     puzzle = Puzzle.where("room_id is null").sample
     puzzle.room_id = room.id
     puzzle.save
