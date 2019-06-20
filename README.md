@@ -2,13 +2,15 @@
 Sudoku-net is the simple Sudoku game.
 We can Sudoku with friend on Online.
 
-![スクリーンショット](https://github.com/ratovia/chat-space/blob/readme-images/スクリーンショット%202019-06-11%2017.03.30.png "a")
 
-![スクリーンショット](https://github.com/ratovia/chat-space/blob/readme-images/スクリーンショット%202019-06-11%2017.03.30.png "a")
+![スクリーンショット](https://github.com/ratovia/sudoku-net/blob/readme-image/スクリーンショット%202019-06-09%200.28.26.png "top")
 
+![スクリーンショット](https://github.com/ratovia/sudoku-net/blob/readme-image/a27443cf84332ff9a9b5d6798a88e7e3.gif "userpage")
+
+![スクリーンショット](https://github.com/ratovia/sudoku-net/blob/readme-image/スクリーンショット%202019-06-19%201.49.21.png "sudokupage")
 ## description
-Tech::Expertの応用カリキュラムで作成したチャットアプリです。
-Ajaxの非同期通信を使用して複数ユーザでのチャットを可能にしています。
+複数人で数独に挑戦できるWebサービスです。
+数独の生成は私が作成したSudoku-generatorで実施します。
 
 # Environment
 - Ruby(v2.5.1p57)
