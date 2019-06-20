@@ -2,6 +2,7 @@
 Sudoku-net is the simple Sudoku game.
 We can Sudoku with friend on Online.
 
+
 ![スクリーンショット](https://github.com/ratovia/sudoku-net/blob/readme-image/スクリーンショット%202019-06-09%200.28.26.png "top")
 
 ![スクリーンショット](https://github.com/ratovia/sudoku-net/blob/readme-image/a27443cf84332ff9a9b5d6798a88e7e3.gif "userpage")
@@ -24,4 +25,3 @@ We can Sudoku with friend on Online.
 
 ## deploy
 - heroku
-
