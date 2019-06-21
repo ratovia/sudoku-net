@@ -1,6 +1,9 @@
 class PuzzlesController < ApplicationController
   def index
     @room = Room.find(params[:room_id])
+    if @room.users.index(current_user).nil?
+      @room.users << current_user
+    end
   end
 
   def update
