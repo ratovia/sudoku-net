@@ -10,9 +10,13 @@
   %body
     %header.header
       .title
-        = link_to "Sudoku-net", user_path(current_user) if user_signed_in?
-      - if user_signed_in? && request.path_info != root_path
-        = link_to "グループ作成", rooms_path, method: :post,class: "btn"
-        = link_to "ログアウト", destroy_user_session_path, method: :delete,class: "btn"
+      - if user_signed_in?
+        = link_to "Sudoku-net", user_path(current_user), class: "title"
+        - if request.path_info != root_path
+          = link_to "グループ作成", rooms_path, method: :post,class: "btn"
+          = link_to "ログアウト", destroy_user_session_path, method: :delete,class: "btn"
+      - else
+        = link_to "Sudoku-net", "/",class: "title"
+
     = yield
     %footer.footer
