@@ -11,11 +11,13 @@
         -#   %em
         -#     (#{@minimum_password_length} characters minimum)
         -#   %br/
-        = f.password_field :password, autofocus: true, autocomplete: "new-password"
+        = fa_icon "key"
+        = f.password_field :password, autofocus: true, placeholder: "Password",autocomplete: "new-password"
       .field
         -# = f.label :password_confirmation, "Confirm new password"
         -# %br/
-        = f.password_field :password_confirmation, autocomplete: "off"
+        = fa_icon "key"
+        = f.password_field :password_confirmation, placeholder: "Password_Confirmation", autocomplete: "off"
       .actions
         = f.submit "Change my password"
     = render "devise/shared/links"

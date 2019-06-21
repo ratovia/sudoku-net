@@ -6,7 +6,8 @@
       .field
         -# = f.label :email
         -# %br/
-        = f.email_field :email, autofocus: true, autocomplete: "email"
+        = fa_icon "envelop"
+        = f.email_field :email, autofocus: true, autocomplete: "email",placeholder: "Email"
       .actions
         = f.submit "Send me reset password instructions"
     = render "devise/shared/links"
