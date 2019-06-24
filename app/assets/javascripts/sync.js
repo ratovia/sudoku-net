@@ -59,6 +59,6 @@ $(function(){
       });
     }
   }
-  setInterval(reloadData,1000);
+  setInterval(reloadData,5000);
   reloadData();
 })
